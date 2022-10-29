@@ -8,25 +8,16 @@ let logTittle = document.getElementById('tittle');
 
 //open to register page 
 
-btnRegister.addEventListener("click" , ()=>{
-    login.classList.remove("active");
-    login.classList.add("hide")
-    register.classList.remove("hide");
-    register.classList.add("active");
-
-    //Change Page Tittle
+btnRegister.onclick = function(){
+    register.style.display= 'block';
+    login.style.display= 'none';
     logTittle.innerHTML="Register";
-
-});
+}
 
 //open to login page 
 
-btnLogin.addEventListener("click" , ()=>{
-    register.classList.remove("active"); 
-    register.classList.add("hide");
-    login.classList.remove("hide");
-    login.classList.add("active");
-
-    //Change Page Tittle
+btnLogin.onclick = function(){
+    login.style.display= 'block';
+    register.style.display= 'none';
     logTittle.innerHTML="Login";
-});
+}

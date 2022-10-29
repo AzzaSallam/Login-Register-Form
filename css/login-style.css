@@ -59,10 +59,6 @@ h1{
     font-weight: bold;
     font-size: 50px;
     position: relative;
-    /* margin: 20px auto 40px auto; */
-    /* background: linear-gradient(to right, #3FABF4 , #3ACED4  , #EAEAEA );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; */
 }
 .forms{
     position: absolute;
@@ -147,13 +143,14 @@ h1{
 .link-btn a:hover{
     text-decoration: underline solid var(--main-color);
 }
-/* Registeration form */
+/* ___________Registeration form _____________*/
 .forms .form-register{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
+    display: none;
 }
 .form-register .name{
     display: flex;
@@ -163,14 +160,7 @@ h1{
 .form-register .name .last{
     width: 90%;
 }
-/* Active Class */
-.active{
-    display: block;
-}
-/* hide class */
-.hide{
-    display: none;
-}
+
 @media (max-width:1000px) {
     .container-img{
         display: none;
